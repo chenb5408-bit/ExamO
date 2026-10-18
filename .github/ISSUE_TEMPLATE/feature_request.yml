@@ -1,0 +1,26 @@
+name: "Request / 需求建议"
+description: "Describe a product or maintenance improvement."
+title: "[Request] "
+body:
+  - type: markdown
+    attributes:
+      value: "请勿填写密码、Token、个人信息、内部地址或真实用户资料。安全问题使用私密报告。"
+  - type: textarea
+    id: summary
+    attributes:
+      label: "目标与场景 / Goal and use case"
+      description: "描述要解决的问题与可衡量的预期结果。"
+    validations:
+      required: true
+  - type: textarea
+    id: context
+    attributes:
+      label: "补充信息 / Context"
+      description: "只提供已脱敏的版本信息、截图或日志。"
+  - type: checkboxes
+    id: privacy
+    attributes:
+      label: "隐私确认 / Privacy"
+      options:
+        - label: "我确认没有包含凭据或私密数据 / No credentials or private data included"
+          required: true

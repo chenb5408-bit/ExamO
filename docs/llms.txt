@@ -1,0 +1,12 @@
+# ExamO / 易考鸥
+
+> AI-assisted learning and exam preparation in a WeChat Mini Program. This is a product showcase; core source is private.
+
+- [Product overview](https://chenb5408-bit.github.io/ExamO/)
+- [English introduction](https://chenb5408-bit.github.io/ExamO/english.html)
+- [Features](https://chenb5408-bit.github.io/ExamO/features.html)
+- [Architecture overview](https://chenb5408-bit.github.io/ExamO/architecture.html)
+- [Status and contact](https://chenb5408-bit.github.io/ExamO/contact.html)
+- [Security](https://chenb5408-bit.github.io/ExamO/security.html)
+
+The maintainer reports development complete as of 2026-10-19. Public registration availability is not asserted. AI output is a learning aid. No open-source license is granted by this repository.

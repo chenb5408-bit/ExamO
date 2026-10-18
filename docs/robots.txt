@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /ExamO/
+Sitemap: https://chenb5408-bit.github.io/ExamO/sitemap.xml

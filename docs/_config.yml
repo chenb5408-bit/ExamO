@@ -1,0 +1,12 @@
+title: "ExamO · 易考鸥"
+description: "AI 伴学与备考助手 | AI study assistant for exam preparation on WeChat"
+url: "https://chenb5408-bit.github.io"
+baseurl: "/ExamO"
+lang: zh-CN
+theme: jekyll-theme-cayman
+plugins:
+  - jekyll-seo-tag
+  - jekyll-sitemap
+show_downloads: false
+github:
+  is_project_page: false
