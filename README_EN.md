@@ -107,6 +107,7 @@ Next priorities include release evidence, trial access, configuration acceptance
 
 ## Official links and contact
 
+- [Company website: 初界计划](http://114.215.206.70/)
 - [Product information website](https://chenb5408-bit.github.io/ExamO/english.html)
 - [Official public repository](https://github.com/chenb5408-bit/ExamO)
 - [Product feedback and initial collaboration inquiries](https://github.com/chenb5408-bit/ExamO/issues/new/choose)

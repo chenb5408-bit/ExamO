@@ -117,6 +117,7 @@ ExamO 的 AI Study Agent 方向是把**感知—规划—执行—评估—调�
 
 ## 官方入口、反馈与合作
 
+- 公司官网：[初界计划](http://114.215.206.70/)
 - 官方产品资料站：[ExamO 易考鸥](https://chenb5408-bit.github.io/ExamO/)
 - 官方公开资料仓库：[chenb5408-bit/ExamO](https://github.com/chenb5408-bit/ExamO)
 - 产品反馈与公开合作意向：[GitHub Issues](https://github.com/chenb5408-bit/ExamO/issues/new/choose)

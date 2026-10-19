@@ -13,9 +13,10 @@ review_date: 2026-10-20
 ## 2026-10-20 — 产品截图更新 / Product gallery update
 
 - 加入维护者提供的首页、复习、闪卡、费曼讲解和考试计划截图，原图保留不修改。
+- 加入维护者确认的公司官网“初界计划”链接，保留 ExamO 产品资料站入口。
 - 同步中英文主页和截图说明；不将界面截图作为功能上线或学习效果证明。
 
-Adds five maintainer-supplied screenshots and updates the bilingual gallery. No application functionality is changed.
+Adds five maintainer-supplied screenshots, updates the bilingual gallery and links the maintainer-confirmed company website 初界计划. No application functionality is changed.
 
 ## 2026-10-20 — 官方项目主页与实现边界 / Official homepage and implementation boundaries
 
