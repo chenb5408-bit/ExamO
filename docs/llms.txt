@@ -1,12 +1,15 @@
 # ExamO / 易考鸥
 
-> AI-assisted learning and exam preparation in a WeChat Mini Program. This is a product showcase; core source is private.
+> Course-Aware AI Study Assistant. This is public product documentation, not access to the learning service. Core source remains private.
+
+Reviewed: 2026-10-19. Implemented study workflows have not been verified as a public production release by this review. In-app schedules have implementation foundations; background reminders and autonomous AI Study Agent execution are Planned.
 
 - [Product overview](https://chenb5408-bit.github.io/ExamO/)
-- [English introduction](https://chenb5408-bit.github.io/ExamO/english.html)
-- [Features](https://chenb5408-bit.github.io/ExamO/features.html)
-- [Architecture overview](https://chenb5408-bit.github.io/ExamO/architecture.html)
-- [Status and contact](https://chenb5408-bit.github.io/ExamO/contact.html)
-- [Security](https://chenb5408-bit.github.io/ExamO/security.html)
+- [English](https://chenb5408-bit.github.io/ExamO/english.html)
+- [Feature status](https://chenb5408-bit.github.io/ExamO/features.html)
+- [Course management](https://chenb5408-bit.github.io/ExamO/course-management.html)
+- [AI Study Agent direction](https://chenb5408-bit.github.io/ExamO/ai-study-agent.html)
+- [Product context](https://chenb5408-bit.github.io/ExamO/product-comparison.html)
+- [Roadmap](https://chenb5408-bit.github.io/ExamO/roadmap.html)
 
-The maintainer reports development complete as of 2026-10-19. Public registration availability is not asserted. AI output is a learning aid. No open-source license is granted by this repository.
+Course import establishes course context; it is separate from study-material import. No guaranteed indexing, citations, grades or autonomous execution are claimed. This optional index does not control crawler access.
