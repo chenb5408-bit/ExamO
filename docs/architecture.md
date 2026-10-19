@@ -1,23 +1,48 @@
 ---
 layout: default
-title: "ExamO 技术架构概览 | Architecture"
-description: "WeChat Mini Program, Node.js, Express, SQLite and document processing."
+title: "ExamO 系统架构"
+description: "ExamO 系统架构 / ExamO product documentation"
 lang: zh-CN
-review_date: 2026-10-19
+review_date: 2026-10-20
 ---
 
-# 技术架构概览 / Architecture overview
+# ExamO 系统架构 / System architecture
 
-核验日期 / Reviewed: **2026-10-19**。只描述公开技术分层，不披露私有实现或部署细节。
+核验日期 / Reviewed: 2026-10-20。此处是高层产品架构，不是内部接口或部署手册。
 
-| 层级 / Layer | 作用 / Responsibility |
+![学习系统与反馈](diagrams/learning-system.svg)
+
+## 技术分层
+
+| 层级 | 职责 / Responsibility |
 | --- | --- |
-| 原生微信小程序 / Native WeChat Mini Program | 课程、资料、练习、复习与用户确认 / Study interfaces and user control |
-| Node.js + Express | 组织用户触发的学习流程与权限边界 / Coordinate user-triggered workflows and access boundaries |
-| Python 文档处理 / Document processing | 文本、布局与按需识别，处理结果交给用户核对 / Parsing and recognition followed by user review |
-| SQLite | 保存结构化学习与任务信息；当前运行时使用 Node 内置 SQLite 接口 / Persistence through Node's built-in SQLite interface |
-| 服务端模型集成 / Server-side model integration | 解释、生成与反馈；由应用控制调用流程 / Explanations, generation and feedback through application-controlled calls |
+| 原生微信小程序 / Native WeChat Mini Program | 用户输入、识别核对、任务选择、作答和复习交互 |
+| Node.js + Express | 身份校验、资料与学习流程协调、权限边界 |
+| 文档与 OCR 组件 / Document and OCR components | 文件、图像与文本解析；包含 Python 处理组件 |
+| SQLite | 保存资料状态与用户学习记录；运行时使用 Node.js 内置 SQLite |
+| 学习决策服务 / Learning decision services | 知识状态、优先级、学习时间预算、练习建议与复习间隔 |
+| 服务端模型接入 / Server-side model integrations | 包含 DeepSeek；辅助生成、解释、识别和反馈，具体调用依配置而定 |
 
-多步骤处理和持久化任务不构成完整自主 Agent 的证据。此处不公布模型账户、服务地址、云环境、私有接口、数据表、内部提示词或业务算法。
+## 数据与任务边界
 
-Multi-step processing and stored tasks are not evidence of a complete autonomous Agent. Provider accounts, infrastructure, private endpoints, data structures, internal prompts and business algorithms remain outside this public overview.
+用户确认资料 → 课程和知识上下文 → 用户选择学习任务 → 学习反馈 → 更新记录 → 下次请求重新计算建议。
+
+原试卷/题库与生成练习使用不同路径。原题不得为迎合生成流程而被重写。学习计划与自适应模块有配置前提；不能把源码中存在的实现视为已经在生产开启。
+
+资料解析有排队、运行、成功和失败状态及超时处理；生成任务也有状态记录。这些是应用任务生命周期，不代表模型具备自主编排能力。失败处理包括明确报错、部分降级和由用户重新发起；未核实任意任务的通用自动恢复或跨进程无损续跑。
+
+学习记录按用户和课程上下文使用。个性化依赖设置、数据量与有效反馈；不披露具体数据结构、计算权重、提示词或商业策略。
+
+## 智能体边界
+
+当前可以描述为模型辅助与规则编排结合的学习系统。没有发现完整的模型自主工具调度器；课程提醒、费曼和闪卡也不能据此推断已经组成同一个全自主系统。详见 [AGENT.md](ai-study-agent.md)。
+
+## English
+
+The reviewed system uses a native WeChat Mini Program, Node.js/Express application services, document and OCR components including Python, SQLite through Node.js's built-in interface, study-decision services and server-side model integrations including DeepSeek.
+
+Confirmed materials feed course and knowledge context. Students choose study actions; eligible feedback updates records that later requests use to recalculate recommendations. Original-question and generated-practice paths stay separate. Planning and adaptive modules require configuration and production acceptance.
+
+Parse and generation jobs have lifecycle states and error handling. This is application workflow management, not evidence of autonomous agent orchestration or universal resumability. No internal endpoints, deployment topology, database schema, prompts or commercial decision parameters are published.
+
+[功能 / Features](features.md) · [智能体 / Agent](ai-study-agent.md) · [安全 / Security](security.md)

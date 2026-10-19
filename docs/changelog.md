@@ -1,14 +1,23 @@
 ---
 layout: default
-title: "ExamO 资料更新日志 | Documentation changelog"
-description: "Documentation history, not a software release log."
+title: "ExamO 资料更新日志"
+description: "ExamO 资料更新日志 / ExamO product documentation"
 lang: zh-CN
-review_date: 2026-10-19
+review_date: 2026-10-20
 ---
 
 # 资料更新日志 / Documentation changelog
 
 此日志记录公开资料变化，不是软件版本或生产发布记录。This log tracks product documentation, not software releases.
+
+## 2026-10-20 — 官方项目主页与实现边界 / Official homepage and implementation boundaries
+
+- 只读复核两个私有默认分支，按“已实现 / 需启用 / 待验收 / 规划”整理功能。
+- 扩充中英文主页，增加系统架构、智能体机制、功能、路线图、贡献和知识产权文件。
+- 同步产品资料站、搜索摘要与可引用索引，复用已授权截图。
+- 本次为资料更新，不是软件发布；没有修改业务代码、开发 V5 或新增开源许可证。
+
+Reviewed private default branches and expanded bilingual public product documentation. This is not a software release. Autonomous model-directed orchestration remains planned.
 
 ## 2026-10-19 — 课程感知型产品资料更新 / Course-aware product documentation
 

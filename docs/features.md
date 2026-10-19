@@ -1,49 +1,39 @@
 ---
 layout: default
-title: "功能与可用性 | ExamO"
-description: "Implemented foundations, release evidence and planned capabilities."
+title: "ExamO 已实现功能与使用边界"
+description: "ExamO 已实现功能与使用边界 / ExamO product documentation"
 lang: zh-CN
-review_date: 2026-10-19
+review_date: 2026-10-20
 ---
 
-# 功能与可用性 / Features and availability
+# ExamO 已实现功能 / Implemented features
 
-核验日期 / Reviewed: **2026-10-19**。本页区分实现证据、对外开放和规划；代码存在、配置默认值与生产发布是不同结论。
+核验日期 / Reviewed: **2026-10-20**。依据两个私有源码仓库当前默认分支，只读核对实现与调用关系；未运行生产验收。表中“已实现 / Implemented”不等于“已上线 / Live”。
 
-## 状态约定 / Status definitions
-
-| 状态 | 中文 | English |
+| 功能 / Feature | 状态 / Status | 条件与边界 / Conditions |
 | --- | --- | --- |
-| Available | 已有日期、版本和体验证据支持对外提供使用 | Verified as offered to users, with release or experience evidence |
-| In Development | 有实现或集成基础，但配置、生效范围或发布验收尚未核实 | Implementation or integration exists; enablement or release acceptance remains unverified |
-| Planned | 未发现完整闭环，只能作为发展方向 | No complete implementation was found; a direction, not a shipping commitment |
+| 文档、图片和粘贴文本解析 / Material parsing | 已实现 / Implemented | 格式、OCR 与服务可用性影响结果；核对后确认 |
+| 资料类型与学科上下文 / Classification and subject context | 已实现 / Implemented | AI 可出错，不保证自动识别全部学科 |
+| 知识点、资料证据和重要度 / Concepts and importance | 已实现 / Implemented | 考试相关重要度需启用；来源于资料，不是押题 |
+| 资料生成练习 / Material-based question generation | 已实现 / Implemented | 基于复习材料；依赖模型配置与输出核对 |
+| 上传原题作答 / Original-question practice | 已实现 / Implemented | 保留原题，不将原卷改写为新生成题 |
+| 个性化组卷与模拟考试 / Personalized practice and mock exams | 已实现，部分需启用 / Implemented, partly configuration-dependent | 依赖可用资料、知识点与考试设置 |
+| 智能批改、解释与错题分析 / Marking and mistake analysis | 已实现 / Implemented | 主观题可能使用模型；不可靠结果不等同有效学习证据 |
+| 掌握度与薄弱点 / Mastery and weak points | 已实现 / Implemented | 根据记录估计，非权威评分或成绩预测 |
+| 学习时间预算与任务计划 / Study budgets and planning | 已实现，需启用 / Implemented, configuration-dependent | 输入考试时间、可用时间与学习状态；由用户选择执行 |
+| 自适应难度和训练顺序 / Adaptive difficulty and priorities | 已实现，部分需启用 / Implemented, partly configuration-dependent | 基于历史证据重新计算，非持续自主运行 |
+| 复习间隔与学习偏好 / Review intervals and preferences | 已实现，部分需启用 / Implemented, partly configuration-dependent | 数据量、用户设置影响个性化 |
+| 错题与闪卡复习 / Mistakes and flashcards | 已实现 / Implemented | 主动回忆、自评和反馈；不将单次自评当作已掌握证明 |
+| AI 讲题与费曼学习 / Explanations and Feynman practice | 已实现 / Implemented | 用户触发；有追问和评价，不宣称实时语音语义理解 |
+| 课程与课表管理 / Course and timetable management | 已实现 / Implemented | 截图需核对，课程导入与学习资料导入独立 |
+| 应用内课程和考试提示 / In-app class and exam cues | 已实现 / Implemented | 用户打开应用查看，不是后台通知 |
+| 学习记录、偏好与训练状态 / Records, preferences and task state | 已实现 / Implemented | 分用户上下文，配置和有效反馈决定可用范围 |
 
-公开仓库和产品资料官网可访问。**本轮没有核实具体业务功能已上线，不把它们列为 Available。** This review verified public documentation, not a live release of the study service.
+## 仍在验收或规划 / Validation and planning
 
-## 已实现基础 / Implementation found
+- **待验收 / Validation required**：生产发布版本、公开体验范围、实际启用配置、跨入口一致性和全流程运行证据。
+- **规划 / Planned**：模型自主多工具编排、持续跨任务执行、后台通知、通用自动重规划和任意任务恢复。
 
-| 功能 / Capability | 能做什么 / Scope | 当前限制 / Boundary | 状态 |
-| --- | --- | --- | --- |
-| 资料上传与识别 / Materials | 输入文件、图片或文字，识别后核对 / File, image or text input followed by review | 格式与解析能力受运行依赖影响，不保证任意资料都能准确识别 / Parsing depends on supported formats and runtime dependencies | In Development |
-| 原题练习 / Original questions | 使用资料中解析出的原题 / Work with questions extracted from uploaded papers | AI 补充答案应与原始答案区分，并由用户核对 / AI-suggested answers are not original answer keys | In Development |
-| AI 辅助练习 / Generated practice | 学习资料进入练习生成与反馈 / Generate practice from study material | 不把原卷任意改写成新题；生成内容可能有误 / Generation is distinct from original-paper practice and may contain errors | In Development |
-| 错题与闪卡 / Review | 记录、回忆、自评与讲解反馈 / Records, recall, self-assessment and feedback | 失败处理与同步范围有边界；不宣称经过验证的个人遗忘曲线 / No claim of seamless synchronization or a validated personal forgetting curve | In Development |
-| 讲题与费曼练习 / Explanations | 题目解释、讲解、追问、总结与用户选择的巩固练习 / Explanations, learner-led discussion and optional consolidation | 录音后的转写不等于实时语音理解；部分保存只在本机 / Post-recording transcription is not real-time voice understanding; some saved content is device-local | In Development |
-| 课程与考试信息 / Courses | 课表图核对导入、手动录入、考试信息与应用内展示 / Reviewed timetable import, manual entry and in-app views | 不自动同步教务，也不把课程导入当作资料导入 / No claim of automatic university-system synchronization | In Development |
-| 学习记录与偏好 / Records | 历史、趋势、薄弱点和可调整偏好 / History, trends, weak areas and preferences | 不构成成绩预测、能力认证或学习效果的因果证明 / Not a grade prediction, certification or causal efficacy claim | In Development |
-| 个性化复习与学习建议 / Suggestions | 规则建议、复习安排和备考任务建议的实现基础 / Foundations for revision and task suggestions | 部分能力需要相应配置与验收，不代表完整课表避让排程 / Some functions are gated; no claim of complete timetable-aware scheduling | In Development |
+This list records implementation findings rather than production availability. Configuration-dependent planning and adaptive features must be enabled and validated. An implemented learning module does not establish an autonomous agent.
 
-## 尚待建设 / Planned capabilities
-
-- 后台课程/考试提醒的授权、调度、投递、撤销和失败处理 / Consented background reminders with delivery and cancellation.
-- 统一的 Agent 目标、计划、工具权限和执行记录 / Unified Agent goals, plans, tool permissions and execution traces.
-- 模型自主选择工具、多步骤执行与可控恢复 / Model-directed tool use and multi-step execution with bounded recovery.
-- 基于完整课程安排的跨课程自动排期 / Cross-course scheduling using complete course schedules.
-
-## 如何升级为 Available / Moving a feature to Available
-
-确认版本与开放范围、记录用户路径和验收日期、检查必要授权与失败分支，再同步更新中英文资料。没有这些证据时，维持当前状态，不用截图或历史测试数量代替发布证明。
-
-Record a release and access scope, verify the user journey and failure paths, and update both languages together. Screenshots or historical test counts are not release evidence.
-
-[课程管理](course-management.md) · [智能体状态](ai-study-agent.md) · [路线图](roadmap.md)
+[智能体边界 / Agent boundaries](ai-study-agent.md) · [路线图 / Roadmap](roadmap.md)
