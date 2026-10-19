@@ -1,3 +1,6 @@
+# Informational compatibility file at a project-site subpath.
+# Authoritative crawler rules belong at https://chenb5408-bit.github.io/robots.txt.
+# This subpath file is not evidence that root-level crawler policy was changed.
 User-agent: *
 Allow: /ExamO/
 Sitemap: https://chenb5408-bit.github.io/ExamO/sitemap.xml

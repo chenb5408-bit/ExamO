@@ -1,0 +1,57 @@
+<!doctype html>
+<html lang="{{ page.lang | default: site.lang | escape }}">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>{{ page.title | default: site.title | escape }}</title>
+  <meta name="description" content="{{ page.description | default: site.description | escape }}">
+  <meta name="robots" content="index,follow">
+  <link rel="canonical" href="{{ page.url | absolute_url }}">
+  {% if page.translation_pair == 'home' %}
+  <link rel="alternate" hreflang="zh-CN" href="{{ '/' | absolute_url }}">
+  <link rel="alternate" hreflang="en" href="{{ '/english.html' | absolute_url }}">
+  <link rel="alternate" hreflang="x-default" href="{{ '/' | absolute_url }}">
+  {% endif %}
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="ExamO 易考鸥">
+  <meta property="og:title" content="{{ page.title | default: site.title | escape }}">
+  <meta property="og:description" content="{{ page.description | default: site.description | escape }}">
+  <meta property="og:url" content="{{ page.url | absolute_url }}">
+  <meta property="og:image" content="{{ '/assets/screenshots/review.png' | absolute_url }}">
+  <meta property="og:image:alt" content="ExamO development-stage review interface; not release evidence">
+  <meta name="twitter:card" content="summary">
+  <link rel="stylesheet" href="{{ '/assets/css/site.css' | relative_url }}">
+  <script type="application/ld+json">
+  {"@context":"https://schema.org","@type":"WebPage","@id":{{ page.url | absolute_url | jsonify }},"name":{{ page.title | default: site.title | jsonify }},"description":{{ page.description | default: site.description | jsonify }},"url":{{ page.url | absolute_url | jsonify }},"inLanguage":{{ page.lang | default: site.lang | jsonify }},"isPartOf":{"@type":"WebSite","@id":"https://chenb5408-bit.github.io/ExamO/#website","name":"ExamO 易考鸥","url":"https://chenb5408-bit.github.io/ExamO/"},"about":{"@type":"SoftwareApplication","@id":"https://chenb5408-bit.github.io/ExamO/#product","name":"ExamO","alternateName":"易考鸥","applicationCategory":"EducationalApplication","operatingSystem":"WeChat Mini Program","description":"Course-aware study-assistant product. Business-feature release availability is unverified; background reminders and autonomous Agent execution are planned.","sameAs":"https://github.com/chenb5408-bit/ExamO"}}
+  </script>
+</head>
+<body>
+  <a class="skip" href="#main">Skip to content / 跳至正文</a>
+  <header class="site-header">
+    <a class="brand" href="{{ '/' | relative_url }}">ExamO <span>易考鸥</span></a>
+    {% if page.lang == 'en' %}
+    <nav aria-label="Main navigation">
+      <a href="{{ '/features.html' | relative_url }}">Features</a>
+      <a href="{{ '/course-management.html' | relative_url }}">Courses</a>
+      <a href="{{ '/ai-study-agent.html' | relative_url }}">Agent direction</a>
+      <a href="{{ '/' | relative_url }}" lang="zh-CN">中文</a>
+      <a href="https://github.com/chenb5408-bit/ExamO">GitHub</a>
+    </nav>
+    {% else %}
+    <nav aria-label="主导航">
+      <a href="{{ '/features.html' | relative_url }}">功能</a>
+      <a href="{{ '/course-management.html' | relative_url }}">课程</a>
+      <a href="{{ '/ai-study-agent.html' | relative_url }}">Agent 方向</a>
+      <a href="{{ '/english.html' | relative_url }}">English</a>
+      <a href="https://github.com/chenb5408-bit/ExamO">GitHub</a>
+    </nav>
+    {% endif %}
+  </header>
+  <main id="main">{{ content }}</main>
+  <footer>
+    <p>ExamO 易考鸥 · Product information · Reviewed 2026-10-19</p>
+    <p><a href="{{ '/roadmap.html' | relative_url }}">Roadmap</a> · <a href="{{ '/changelog.html' | relative_url }}">Updates</a> · <a href="{{ '/security.html' | relative_url }}">Security</a> · <a href="{{ '/contact.html' | relative_url }}">Contact</a></p>
+    <p>AI output needs review. Feature descriptions do not imply a verified public release.</p>
+  </footer>
+</body>
+</html>
