@@ -20,9 +20,9 @@ review_date: 2026-10-19
 
 | 项目 | 边界 | 状态 |
 | --- | --- | --- |
-| 手动添加课程 | 用户维护课程、学期、时段与考试信息 | In Development · 发布待核验 |
-| 课表截图识别 | 支持图像输入，结果可修改、选择并确认后保存；可能识别错误 | In Development · 发布待核验 |
-| 今日课程与考试临近信息 | 用户打开应用时查看安排与倒计时，依赖准确的用户确认信息 | In Development · 发布待核验 |
+| 手动添加课程 | 用户维护课程、学期、时段与考试信息 | 已实现 / Implemented · 发布待核验 |
+| 课表截图识别 | 支持图像输入，结果可修改、选择并确认后保存；可能识别错误 | 已实现 / Implemented · 发布待核验 |
+| 今日课程与考试临近信息 | 用户打开应用时查看安排与倒计时，依赖准确的用户确认信息 | 已实现 / Implemented · 发布待核验 |
 | 后台主动提醒 | 未发现完整的订阅授权、时间调度和通知投递实现 | Planned |
 | 教务系统自动同步、系统日历联动 | 未发现完整接入，不宣称已支持 | Planned |
 | 跨课程空闲时段自动排期 | 不能从已存在的学习计划建议推断为已实现 | Planned |
@@ -39,7 +39,7 @@ review_date: 2026-10-19
 
 Course import establishes context about the student's classes, class times and voluntarily entered exam details. **It is separate from importing study materials and does not create a question bank from a course name.** Automatic binding between new materials and timetable courses has not been established.
 
-Manual course entry, reviewed timetable-image import and in-app views of classes and approaching exams have implementation foundations. Their public release remains unverified (**In Development**). In-app displays are not background notifications.
+Manual course entry, reviewed timetable-image import and in-app views of classes and approaching exams are implemented in code. Their public release remains unverified. In-app displays are not background notifications.
 
 Consented notification delivery, university-system synchronization, calendar integration and automatic scheduling around free time across courses are **Planned**. The intended connection from course information to reminders, materials, practice and revision is a design direction, not an already verified automated chain.
 

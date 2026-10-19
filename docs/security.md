@@ -1,9 +1,9 @@
 ---
 layout: default
-title: "ExamO 安全说明 | Security"
-description: "Public documentation boundaries and private security reporting."
+title: "ExamO 安全说明"
+description: "ExamO 安全说明 / ExamO product documentation"
 lang: zh-CN
-review_date: 2026-10-19
+review_date: 2026-10-20
 ---
 
 # 安全说明 / Security

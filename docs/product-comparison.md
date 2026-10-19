@@ -25,9 +25,9 @@ review_date: 2026-10-19
 
 ## ExamO 的位置
 
-若在研究“类似 Quizlet 的工具”，ExamO 的相关实现基础是闪卡、回忆自评与练习。若在研究“类似 StudyFetch 的产品”，相关方向是资料学习、AI 解释与学习建议。课程安排与提醒方向也可以放在 Coursicle、Ahead 所处的学生计划语境中理解。
+若在研究“类似 Quizlet 的工具”，ExamO 的相关实现是闪卡、回忆自评与练习。若在研究“类似 StudyFetch 的产品”，相关方向是资料学习、AI 解释与学习建议。课程安排与提醒方向也可以放在 Coursicle、Ahead 所处的学生计划语境中理解。
 
-ExamO 希望连接：**课程信息 → 课程相关提醒 → 学习资料 → AI 辅助练习 → 持续复习**，并以微信小程序承载学生交互。不同环节已有不同程度的实现；后台提醒、全链路自动联动与自主 Agent 执行仍不能称为已实现。
+ExamO 希望连接：**课程信息 → 课程相关提醒 → 学习资料 → AI 辅助练习 → 持续复习**，并以微信小程序承载学生交互。不同环节已有不同程度的实现；后台提醒、全自主联动与自主 Agent 执行仍不能称为已实现。
 
 这种连接是产品定位和设计方向，不是“唯一”“更先进”或“已全面替代”任何参考产品的证据。[ExamO 功能状态](features.md)与[课程管理边界](course-management.md)应与本页一同阅读。
 
@@ -44,4 +44,4 @@ This is a positioning reference based on first-party information, not a benchmar
 | Coursicle | Course planning, schedules, assignment tracking and notifications | [Official introduction](https://www.coursicle.com/blog/what-is-coursicle/) |
 | Ahead — AI Student Planner | Syllabus scanning, course tasks and study planning | [Developer-published App Store listing](https://apps.apple.com/us/app/ahead-ai-student-planner/id6756762430) |
 
-ExamO is relevant to flashcard-tool research through recall and practice, and to AI-study-tool research through materials, explanations and suggestions. Its intended connection is course information, reminders, materials, practice and continued revision in a WeChat Mini Program. The complete automated connection and autonomous Agent remain unverified or planned. This is a direction, not evidence of superiority or exclusive differentiation. Read the [feature status](features.md) alongside this comparison.
+ExamO is relevant to flashcard-tool research through recall and practice, and to AI-study-tool research through materials, explanations and suggestions. Its intended connection is course information, reminders, materials, practice and continued revision in a WeChat Mini Program. Planning and some adaptive workflows are implemented with configuration requirements; fully autonomous orchestration remains planned. This is a direction, not evidence of superiority or exclusive differentiation. Read the [feature status](features.md) alongside this comparison.

@@ -1,100 +1,123 @@
 ---
 layout: default
-title: "ExamO — Course-Aware AI Study Assistant"
-description: "Course context, document-based learning, practice and revision for students. Background reminders and autonomous execution are planned."
+title: "ExamO — AI-assisted study and exam preparation"
+description: "Course-aware learning, material-based practice, marking and revision for university students. User-controlled workflows; autonomous orchestration planned."
 lang: en
-review_date: 2026-10-19
+review_date: 2026-10-20
 translation_pair: home
 ---
 
-# ExamO — Course-Aware AI Study Assistant
+# ExamO · 易考鸥
 
-[中文](index.md) · [Product website](https://chenb5408-bit.github.io/ExamO/) · [Features](features.md) · [Course management](course-management.md) · [AI Study Agent](ai-study-agent.md)
+**AI-assisted learning and exam preparation for university students · AI Study Agent project**
 
-ExamO (易考鸥) is for students organizing courses, study materials and exam revision. Its product direction brings together document-based learning, AI-assisted practice, flashcard review and course context, with a vision to evolve into a personalized AI Study Agent.
+[中文](index.md) · [Product website](https://chenb5408-bit.github.io/ExamO/english.html) · [Features](features.md) · [Architecture](architecture.md) · [Agent design](ai-study-agent.md)
 
-**Status reviewed: 19 October 2026.** The code contains several study workflows, but this review did not verify a production mini-program release or which features are available to users. Course-related support currently has implementation for in-app schedules and exam countdowns; background notifications remain planned. An autonomous AI Study Agent is **Planned**.
+ExamO connects a student's courses and learning materials with practice, feedback and continued revision. Students can work with textbooks, lecture materials, revision notes, papers and images, then use practice questions, mistakes, flashcards and Feynman-style explanations to check their understanding.
 
-## Positioning
+**Implementation review: October 20, 2026.** Core study workflows have code implementations. Planning and some adaptive capabilities require configuration. The current system combines user-controlled workflows, model assistance and rule-based decisions. Autonomous model-led tool selection and sustained execution remain planned. This review does not verify production release availability or educational outcomes.
 
-Course information provides context about what a student is studying. Materials support practice and understanding. Learning records inform subsequent revision. ExamO aims to connect these parts around the student's actual courses.
+## Who it serves
 
-**Importing courses establishes course context; it does not import lecture materials or create a question bank.** Uploading textbooks, slides, notes or questions is a separate study-material workflow.
+University students often prepare for exams across separate course schedules, textbooks, notes and past papers. ExamO organizes this context and helps identify what to practice, which concepts remain uncertain and where to begin the next revision session.
 
-## Core capabilities
+Course import establishes course and timetable context, exam details and in-app cues. **It is separate from importing lecture materials or parsing papers**; entering a course name does not create a question bank.
 
-| Capability | Implementation found in the review | Public status |
+## From materials to the next revision session
+
+1. **Set the context:** choose a course, add exam details, study time and materials.
+2. **Parse and review:** recognize documents, images or pasted text; review and confirm the result.
+3. **Organize knowledge:** associate concepts and material evidence with the learning context.
+4. **Plan and choose:** when enabled, planning services use exam timing, learning state and available time to suggest tasks. The student chooses what to start.
+5. **Practice and reflect:** use generated practice, original questions, marking, mistake analysis, flashcards or Feynman explanations.
+6. **Evaluate and adapt:** eligible answers and recall feedback update learning records; subsequent requests can recalculate training priorities and revision suggestions.
+
+Uploaded papers and question collections follow an original-question workflow. Revision materials can support new practice questions. Estimated importance reflects supplied evidence, not a prediction of actual exam questions.
+
+## Implemented capabilities
+
+Implemented means code was found and reviewed; it does not mean a public release was verified. Configuration-dependent capabilities are identified explicitly. See [FEATURES.md](features.md).
+
+| Capability | Implementation status | Boundary |
 | --- | --- | --- |
-| Material recognition | File, image and pasted-text inputs, followed by content review | In Development · release unverified |
-| AI-assisted practice | Practice from study materials; uploaded questions follow an original-question workflow | In Development · release unverified |
-| Flashcards and error review | Recall, self-assessment, feedback and study records | In Development · release unverified |
-| AI explanations and Feynman practice | Question explanations, learner-led explanation, follow-up questions and summaries | In Development · release unverified |
-| Course management | Manual entry or timetable-image recognition, with review before saving course and exam information | In Development · release unverified |
-| Course-related cues | In-app views of today's classes and approaching exams | In Development · release unverified |
-| Learning profiles and revision suggestions | Record analysis, preferences and some suggestion workflows; some capabilities are configuration-dependent | In Development · availability unverified |
-| Background course reminders | No complete consent, scheduling and delivery workflow was found | Planned |
-| Autonomous AI Study Agent | No complete model-directed tool-selection and goal-execution loop was found | Planned |
+| Document, image and text recognition | Implemented | Depends on format, services and source quality; review required |
+| Material classification, subject context and concepts | Implemented | AI can misclassify; evidence is not an exam prediction |
+| Material-based practice, original questions and mock exams | Implemented; some configuration-dependent | Preserve original questions; generate new practice from study materials |
+| Marking, explanations and mistake analysis | Implemented | Some subjective marking uses models; uncertain grading must remain explicit |
+| Mastery estimates, weak points and study records | Implemented | Study indicators, not authoritative assessment |
+| Exam time budgets and task planning | Implemented, configuration-dependent | Uses available evidence, exam details and study time |
+| Adaptive difficulty, priorities and review intervals | Implemented; some configuration-dependent | Recomputed from records; depends on evidence and user settings |
+| Flashcards, AI explanations and Feynman practice | Implemented | User initiated; Feynman feedback is not real-time speech understanding |
+| Course management and in-app class/exam cues | Implemented | Timetables need checking; background notifications are planned |
 
-Here, **Available** means verified as offered to users. **In Development** also covers implemented capabilities awaiting integration, enablement or release verification. **Planned** describes a direction, not a shipping commitment. This review confirmed no specific business feature as live. See the [feature status reference](features.md).
+## How the agent project works
 
-## AI Study Agent
+ExamO's AI Study Agent direction connects **perception → planning → execution → evaluation → adjustment**.
 
-The long-term aim is to understand what a student is studying, offer support at useful moments, and leave decisions with the student.
+Materials and learning records provide context and memory. Data services and rules calculate priorities, time budgets and revision suggestions. After a student selects an action, the application invokes the corresponding study capability. Feedback can update records used by later recommendations.
 
-Course context, learning records, rule-based suggestions and task states provide parts of that foundation. A fixed sequence such as recognition, review, practice and revision does not by itself establish an Agent that independently plans, selects tools and executes goals.
+This is currently a **user-controlled, rule-orchestrated workflow with model assistance**. The review did not find a complete model-directed tool-selection loop or a single autonomous controller coordinating every flashcard, Feynman and reminder capability. See [AGENT.md](ai-study-agent.md).
 
-The proposed direction covers Course Awareness, Personalized Learning, Intelligent Reminders, Adaptive Revision, Study Task Planning and Human-in-the-loop. ExamO does not currently claim to take over study decisions, send proactive reminders or autonomously complete learning tasks. Read the [AI Study Agent brief](ai-study-agent.md).
+## Product views
 
-## Courses and reminders
+These are authentic, previously authorized development-stage screenshots. They may differ from the current interface and are not evidence of public release availability.
 
-Students review recognized timetable information before saving it, or enter courses and exam details manually. This information supports in-app schedule displays.
-
-Background notifications, automatic planning around free time across all courses, and autonomous plan execution are not claimed as available. The [course-management guide](course-management.md) separates existing implementation from future reminder capabilities.
-
-## Product screens
-
-These maintainer-supplied screens were previously used in the public showcase. They illustrate development-stage interfaces, not a verified production release or evidence of notification delivery, cross-device synchronization or autonomous Agent execution.
-
-| Review tools | Feynman explanation practice |
+| Revision tools | Feynman explanation |
 | --- | --- |
-| <img src="assets/screenshots/review.png" width="270" alt="ExamO development-stage review tools with flashcard and AI explanation entry points" /> | <img src="assets/screenshots/feynman.png" width="270" alt="ExamO development-stage Feynman practice with topic, material and explanation inputs" /> |
+| <img src="assets/screenshots/review.png" width="270" alt="ExamO development-stage revision tools with flashcards and explanation entry points" /> | <img src="assets/screenshots/feynman.png" width="270" alt="ExamO development-stage Feynman explanation screen with concept and material inputs" /> |
 
-No new logo or synthetic interface is introduced. See [asset provenance](screenshots.md).
+[Asset provenance](screenshots.md). A verified public trial QR code, current demo and official logo remain to be supplied; no fictional demonstration or user data is presented.
 
-## Architecture overview
+## Architecture at a glance
 
-| Layer | Technology and responsibility |
+| Layer | Reviewed technology and responsibility |
 | --- | --- |
-| Study interface | Native WeChat Mini Program for courses, materials, practice and revision |
-| Application services | Node.js and Express coordinate user-triggered workflows |
-| Material processing | Python document parsing and recognition where needed, followed by user review |
-| Persistence | SQLite, accessed through Node.js's built-in SQLite interface in the reviewed runtime |
-| AI assistance | Server-side model calls for explanations, generation and feedback; outputs require review |
+| Student interface | Native WeChat Mini Program for courses, materials, practice and revision |
+| Application services | Node.js and Express for authentication and workflow coordination |
+| Material processing | Document parsing and OCR, including Python processing components |
+| Learning data | SQLite using Node.js's built-in SQLite interface at runtime |
+| Study decisions | Knowledge state, priorities, time budgets, practice and revision services |
+| Model assistance | Server-side model integration, including DeepSeek, for generation, explanation and feedback |
 
-This is a high-level description. Internal endpoints, data structures, infrastructure and credentials remain private. See [architecture](architecture.md).
+![ExamO high-level learning and feedback architecture](diagrams/learning-system.svg)
 
-## What distinguishes the direction
+[ARCHITECTURE.md](architecture.md) describes responsibilities without exposing internal endpoints, deployment details, prompts, schemas or commercial decision parameters.
 
-ExamO focuses on students' course context within a WeChat Mini Program, bringing material-based practice, recall and learner-led explanation into one product direction. It explicitly distinguishes uploaded original questions from generated practice.
+## Product approach
 
-The intended connection is **course information → course-related reminders → study materials → AI-assisted practice → continued revision**. Several parts have implementation; an integrated automated workflow has not been verified.
+ExamO starts with the student's own courses and materials. Practice results can inform subsequent diagnosis, training and revision suggestions. Flashcards support active recall; Feynman practice supports explaining a concept. Original questions remain distinct from AI-generated practice.
 
-Quizlet, Knowt, StudyFetch, Gizmo, Coursicle and Ahead provide useful context for this category. The [product comparison](product-comparison.md) summarizes their published positioning without asserting superiority or a partnership.
+These are implementation findings and design choices, not evidence of superiority, exclusive differentiation or guaranteed grades. The [product-context document](product-comparison.md) provides objective references for research into tools such as Quizlet and StudyFetch.
 
-## Status, roadmap and updates
+## Privacy and safety
 
-Core workflows have code implementations; the scope of a public release remains unverified. Some planning and adaptive-learning capabilities depend on configuration and acceptance checks. The website is a product-information site, not a public registration or download service.
+- Core application source remains in private commercial repositories. This repository is for product information and public discovery.
+- Upload only materials you have permission to use, removing names, student numbers and unrelated details.
+- Processing may involve servers and external services. This page does not claim entirely on-device processing; consult the application's current privacy notice and permissions.
+- Generated questions, marking, explanations and recommendations may be wrong. Check textbooks, original papers and course requirements. Mastery estimates do not predict exam grades.
+- Report security issues through [private vulnerability reporting](https://github.com/chenb5408-bit/ExamO/security/advisories/new), never by posting credentials or learning records publicly. See [SECURITY.md](security.md).
 
-Near-term priorities are release evidence, clear distinctions between in-app cues and background reminders, and verification of personalization availability. User-authorized reminders and learning-task assistance are later directions.
+## Version and milestones
 
-[Roadmap and acceptance criteria](roadmap.md) · [Documentation changelog](changelog.md)
+Both application package manifests currently report **1.0.0**. Package metadata is not a production release certificate. This update changes public documentation only; it does not implement V5 or alter business logic.
 
-## Official links and feedback
+| Date | Verifiable milestone |
+| --- | --- |
+| October 19, 2026 | Public documentation baseline, course-aware positioning, bilingual material and product-information site |
+| October 20, 2026 | Current private default branches reviewed; feature, architecture, agent-boundary and intellectual-property documents expanded |
 
-- [Product website](https://chenb5408-bit.github.io/ExamO/)
+Next priorities include release evidence, trial access, configuration acceptance and feedback-loop validation. Autonomous multi-tool orchestration and background notifications remain development directions. See [ROADMAP.md](roadmap.md) and [CHANGELOG.md](changelog.md).
+
+## Official links and contact
+
+- [Product information website](https://chenb5408-bit.github.io/ExamO/english.html)
 - [Official public repository](https://github.com/chenb5408-bit/ExamO)
-- [Product feedback](https://github.com/chenb5408-bit/ExamO/issues/new/choose); do not attach private study materials.
-- [Maintainer contact](https://github.com/chenb5408-bit) for experience access and cooperation inquiries.
-- [Private security reports](https://github.com/chenb5408-bit/ExamO/security/advisories/new), requiring sign-in; see [SECURITY.md](security.md).
+- [Product feedback and initial collaboration inquiries](https://github.com/chenb5408-bit/ExamO/issues/new/choose)
+- [Maintainer and trial-access inquiries](https://github.com/chenb5408-bit)
+- [Contribution and correction guidelines](contributing.md)
 
-Core source repositories remain private. This documentation contains no credentials, user records or internal deployment information. No open-source license or source-redistribution permission is added. AI output is a study aid: check it against course materials and question sources. Public visibility does not guarantee indexing, citation or recommendation by any search engine or AI system.
+A verified public mini-program trial QR code has not been supplied. The website is an information resource, not confirmation of open registration. Public accessibility does not guarantee search indexing, AI citations or recommendations.
+
+## Brand and intellectual property
+
+ExamO's core source remains a private commercial asset. Publishing this repository does not make the product open source or grant rights to reproduce, modify or redistribute its code, brand or assets. No open-source license has been added. See [NOTICE.md](notice.md).

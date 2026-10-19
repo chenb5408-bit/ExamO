@@ -1,42 +1,38 @@
 ---
 layout: default
-title: "ExamO 路线图 | Roadmap"
-description: "Directions and evidence required before release claims."
+title: "ExamO 路线图"
+description: "ExamO 路线图 / ExamO product documentation"
 lang: zh-CN
-review_date: 2026-10-19
+review_date: 2026-10-20
 ---
 
-# 路线图 / Roadmap
+# ExamO 路线图 / Roadmap
 
-审查日期 / Reviewed: **2026-10-19**。以下为产品方向与拟议验收条件，没有发布日期或交付时限承诺，也不表示本轮已开发这些能力。
+更新日期 / Updated: 2026-10-20。本页记录验收和发展方向，不构成发布时间或功能可用承诺；本次没有开发新版本。
 
-## 当前基础
+## 已有实现 / Implemented foundations
 
-代码已覆盖课程信息、资料识别核对、练习、闪卡、讲解与学习记录等流程。公开资料页面可访问；具体业务功能的生产版本、开放范围和端到端体验尚待发布证据确认。部分个性化与备考规划能力有配置条件。
+资料解析与核对、知识点整理、练习与原题作答、批改诊断、学习记录、闪卡和费曼学习，以及需配置的学习计划和自适应训练。详见 [FEATURES.md](features.md)。
 
-## 按证据推进
+Implemented foundations include reviewed material ingestion, concepts, practice, marking, diagnosis, learning records, flashcards and Feynman practice. Planning and some adaptive capabilities require configuration.
 
-| 阶段 | 方向 | 状态 | 达到下一阶段前需要的证据 |
-| --- | --- | --- | --- |
-| 公开资料 | 中英文统一定位、功能状态和可引用专题 | Available · 公开产品资料 | 维护者批准的资料通过 PR 发布；页面与链接需持续维护 |
-| 核心体验 | 核实已有学习流程的实际开放范围 | In Development | 可识别的发布版本、体验路径、验收日期与失败边界 |
-| 课程相关支持 | 明确应用内提示，评估后台提醒 | In Development · 通知投递 Planned | 用户授权、时间校验、取消、投递结果与失败处理 |
-| 个性化复习 | 核实学习记录与偏好如何影响建议 | In Development | 配置核验、建议依据可解释、关闭后行为明确 |
-| 学习任务协助 | 连接课程与学习任务的建议和确认 | In Development · 自主执行 Planned | 任务可检查、可修改、可停止，不能自行扩大权限 |
-| AI Study Agent | 用户授权下的模型工具选择与多步执行 | Planned | 权限边界、动作确认、状态轨迹、重复防护与有界恢复 |
+## 待核验 / Validation required
 
-## 明确不承诺
+| 项目 / Item | 完成依据 / Acceptance evidence |
+| --- | --- |
+| 生产开放范围 / Release availability | 可核实发布版本、日期和体验方式 |
+| 规划与自适应 / Planning and adaptation | 确认启用配置，验证反馈后计划、难度与优先级的更新 |
+| 跨学习方式联动 / Cross-mode feedback | 核实各入口哪些反馈写入共同状态，避免把自评当客观正确性 |
+| 解析与批改可靠性 / Parsing and marking | 实际格式与失败用例验收，清楚标识不确定性 |
+| 品牌和体验素材 / Brand and trial material | 提供授权 Logo、当前版本截图、脱敏演示和官方体验入口 |
 
-不承诺自动完成作业、预测考试分数、保证提分、自动接管课表、任意失败自愈或所有学校教务同步。课程导入与学习资料导入保持独立；需要连接时应明确说明依据和用户控制。
+## 规划能力 / Planned capabilities
 
-## English
+- **自主工具编排 / Autonomous tool orchestration**：在用户设定范围内选择工具；需权限、任务状态、成本控制与执行证据。
+- **长期目标执行 / Sustained goal execution**：支持暂停、撤销、追踪和失败后的受控重规划；需完成端到端验收。
+- **统一学习协作 / Unified learning coordination**：验证练习、错题、闪卡和费曼反馈的统一调度边界。
+- **后台课程提醒 / Background reminders**：完整用户授权、调度、投递、关闭与失败处理。
 
-This roadmap sets out directions and proposed acceptance criteria, not release dates or delivery promises. This documentation task does not implement the proposed features.
+Planned capabilities are not advertised as currently available. No dates, autonomous execution guarantees or educational outcome claims are implied.
 
-The code contains course, material-review, practice, flashcard, explanation and record workflows. The public documentation site is reachable; the production release and access scope of business features remain unverified. Some personalization and planning capabilities are configuration-dependent.
-
-Priorities are to maintain consistent documentation; verify existing user journeys with release evidence; distinguish in-app cues from planned background notifications; make personalization and opt-out behavior clear; and assess user-controlled task assistance. Autonomous model-directed tools and multi-step execution remain **Planned** and require scoped permissions, action confirmation, state traces, duplicate prevention and bounded recovery.
-
-No grade guarantees, autonomous homework completion, universal university integration or unrestricted recovery are promised.
-
-[功能](features.md) · [AI Study Agent](ai-study-agent.md)
+[更新日志 / Changelog](changelog.md) · [主页 / Home](index.md)
