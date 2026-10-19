@@ -60,13 +60,19 @@ This is currently a **user-controlled, rule-orchestrated workflow with model ass
 
 ## Product views
 
-These are authentic, previously authorized development-stage screenshots. They may differ from the current interface and are not evidence of public release availability.
+These authentic screenshots were supplied by the maintainer to illustrate the product interface. They do not establish production release availability, recognition accuracy, educational outcomes or autonomous agent capabilities. On-screen counts, self-assessments and mastery indicators are not product adoption or effectiveness statistics.
 
-| Revision tools | Feynman explanation |
+| Home and material entry | Revision tools |
 | --- | --- |
-| <img src="assets/screenshots/review.png" width="270" alt="ExamO development-stage revision tools with flashcards and explanation entry points" /> | <img src="assets/screenshots/feynman.png" width="270" alt="ExamO development-stage Feynman explanation screen with concept and material inputs" /> |
+| <img src="assets/screenshots/home-20261019.png" width="240" alt="Home and material entry" /> | <img src="assets/screenshots/review-20261019.png" width="240" alt="Revision tools" /> |
 
-[Asset provenance](screenshots.md). A verified public trial QR code, current demo and official logo remain to be supplied; no fictional demonstration or user data is presented.
+| Flashcards and recall feedback | Feynman explanation practice |
+| --- | --- |
+| <img src="assets/screenshots/flashcard-20261019.png" width="240" alt="Flashcards and recall feedback" /> | <img src="assets/screenshots/feynman-20261020.png" width="240" alt="Feynman explanation practice" /> |
+
+<img src="assets/screenshots/exam-plan-20261020.png" width="240" alt="Exam planning entry" />
+
+[Full gallery and provenance](screenshots.md). Official brand artwork and demonstration video can be added after rights and privacy review.
 
 ## Architecture at a glance
 
@@ -116,7 +122,7 @@ Next priorities include release evidence, trial access, configuration acceptance
 - [Maintainer and trial-access inquiries](https://github.com/chenb5408-bit)
 - [Contribution and correction guidelines](contributing.md)
 
-A verified public mini-program trial QR code has not been supplied. The website is an information resource, not confirmation of open registration. Public accessibility does not guarantee search indexing, AI citations or recommendations.
+Contact the maintainer to confirm trial access. The website is an information resource, not confirmation of open registration. Public accessibility does not guarantee search indexing, AI citations or recommendations.
 
 ## Brand and intellectual property
 

@@ -1,18 +1,38 @@
 ---
 layout: default
-title: "ExamO 截图来源 | Screenshot provenance"
-description: "Maintainer-supplied development-stage screens and their usage boundary."
+title: "ExamO 产品截图与素材来源 | Product gallery"
+description: "Maintainer-supplied views of material import, revision, flashcards, Feynman practice and exam planning."
 lang: zh-CN
-review_date: 2026-10-19
+review_date: 2026-10-20
 ---
 
-# 截图来源与使用范围 / Screenshot provenance
+# ExamO 产品截图 / Product gallery
 
-- review.png：维护者提供、已用于既有公开 ExamO 资料的复习工具界面。
-- feynman.png：维护者提供、已用于既有公开 ExamO 资料的讲解练习界面。
+以下为维护者提供的实际界面，原样展示。素材批次于 2026-10-20 核对，不代表生产发布确认；页面中的数量和学习指标仅为界面内容，不作为效果或用户规模数据。
 
-本版仅复用上述两张既有公开图片，未生成新界面或修改截图。图片为开发期间示例，不代表当前生产版本、已验证效果、后台提醒或自主 Agent 的证据。核对日期：2026-10-19。
+## 首页与学习资料入口 / Home and material entry
 
-已目视检查未见姓名、学号、联系方式、凭据或内部地址。示例课程标题不作为真实用户学习记录证明。公开展示不授予第三方素材再分发许可；权利问题请联系维护者。
+<img src="assets/screenshots/home-20261019.png" width="240" alt="首页与学习资料入口" />
 
-Both images were supplied by the maintainer and previously used in the public showcase. They are development-stage references, not production-release or capability evidence. No new screen or altered image is introduced. Visual inspection found no personal identifiers, credentials or internal addresses. This display does not grant redistribution rights.
+## 复习工具 / Revision tools
+
+<img src="assets/screenshots/review-20261019.png" width="240" alt="复习工具" />
+
+## 闪卡与理解自评 / Flashcards and recall feedback
+
+<img src="assets/screenshots/flashcard-20261019.png" width="240" alt="闪卡与理解自评" />
+
+## 费曼讲解练习 / Feynman explanation practice
+
+<img src="assets/screenshots/feynman-20261020.png" width="240" alt="费曼讲解练习" />
+
+## 考试计划入口 / Exam planning entry
+
+<img src="assets/screenshots/exam-plan-20261020.png" width="240" alt="考试计划入口" />
+
+
+此前公开的复习与讲解截图仍保留在素材目录中。所有图片的公开使用范围以权利人授权为准，公开展示不授予再分发许可。
+
+These are authentic, unchanged screenshots supplied by the maintainer and reviewed on October 20, 2026. They illustrate interface states rather than certified production availability or learning outcomes. On-screen learning indicators are not adoption or efficacy statistics. Existing historical assets remain available; display does not grant redistribution rights.
+
+[中文主页](index.md) · [English](english.md) · [功能边界](features.md)

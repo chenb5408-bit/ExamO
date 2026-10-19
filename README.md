@@ -51,13 +51,19 @@ ExamO 的 AI Study Agent 方向是把**感知—规划—执行—评估—调�
 
 ## 产品界面
 
-以下是维护者已授权公开的真实开发期间截图，可能与当前界面不同，不代表生产服务已开放。
+以下截图由维护者提供，用于展示易考鸥的实际界面。截图不是当前生产发布、识别准确率、学习效果或自主智能体能力的证明；界面中的数量、自评和掌握度不作为用户规模或效果数据。
 
-| 复习工具 | 费曼讲解 |
+| 首页与资料入口 | 复习工具 |
 | --- | --- |
-| <img src="assets/screenshots/review.png" width="270" alt="易考鸥复习工具开发界面，包含闪卡和讲解入口" /> | <img src="assets/screenshots/feynman.png" width="270" alt="易考鸥费曼讲解开发界面，支持输入知识点与学习资料" /> |
+| <img src="assets/screenshots/home-20261019.png" width="240" alt="首页与学习资料入口" /> | <img src="assets/screenshots/review-20261019.png" width="240" alt="复习工具" /> |
 
-[素材来源与使用范围](assets/screenshots/README.md)。公开体验二维码、最新演示和正式品牌标识尚待维护者提供；本仓库不伪造演示、下载入口或用户数据。
+| 闪卡与理解自评 | 费曼讲解练习 |
+| --- | --- |
+| <img src="assets/screenshots/flashcard-20261019.png" width="240" alt="闪卡与理解自评" /> | <img src="assets/screenshots/feynman-20261020.png" width="240" alt="费曼讲解练习" /> |
+
+<img src="assets/screenshots/exam-plan-20261020.png" width="240" alt="考试计划入口" />
+
+[查看完整截图与来源说明](docs/screenshots.md)。正式品牌标识与演示视频可在授权核对后补充。
 
 ## 技术架构概览
 
@@ -107,7 +113,7 @@ ExamO 的 AI Study Agent 方向是把**感知—规划—执行—评估—调�
 - 维护者与体验范围确认：[chenb5408-bit](https://github.com/chenb5408-bit)
 - 贡献与信息修正：[CONTRIBUTING.md](CONTRIBUTING.md)
 
-目前未提供可核验的公开小程序体验二维码。本站是产品资料入口，不代表任何人均可直接注册或使用。搜索引擎和 AI 系统可读取公开资料，但不保证收录、引用或推荐。
+体验范围请先联系维护者确认。本站是产品资料入口，不代表任何人均可直接注册或使用。搜索引擎和 AI 系统可读取公开资料，但不保证收录、引用或推荐。
 
 ## 品牌与知识产权
 

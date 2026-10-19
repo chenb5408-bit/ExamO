@@ -1,10 +1,15 @@
 # 截图来源与使用范围 / Screenshot provenance
 
-- review.png：维护者提供、已用于既有公开 ExamO 资料的复习工具界面。
-- feynman.png：维护者提供、已用于既有公开 ExamO 资料的讲解练习界面。
+新增截图由维护者于 2026-10-20 直接提供，用于官方产品展示。本次原样复制，没有生成、重绘或修改界面。文件名日期仅标识素材批次，不是功能发布日期。
 
-本版仅复用上述两张既有公开图片，未生成新界面或修改截图。图片为开发期间示例，不代表当前生产版本、已验证效果、后台提醒或自主 Agent 的证据。核对日期：2026-10-19。
+| 文件 | 展示内容 |
+| --- | --- |
+| home-20261019.png | 首页与学习资料入口 / Home and material entry |
+| review-20261019.png | 复习工具 / Revision tools |
+| flashcard-20261019.png | 闪卡与理解自评 / Flashcards and recall feedback |
+| feynman-20261020.png | 费曼讲解练习 / Feynman explanation practice |
+| exam-plan-20261020.png | 考试计划入口 / Exam planning entry |
 
-已目视检查未见姓名、学号、联系方式、凭据或内部地址。示例课程标题不作为真实用户学习记录证明。公开展示不授予第三方素材再分发许可；权利问题请联系维护者。
+既有 review.png、feynman.png 保留为历史展示素材。截图不证明当前生产可用范围、学习效果或模型自主执行能力。界面显示的数量、自评与掌握度不作为产品规模或效果统计。素材公开展示不授予再分发许可。
 
-Both images were supplied by the maintainer and previously used in the public showcase. They are development-stage references, not production-release or capability evidence. No new screen or altered image is introduced. Visual inspection found no personal identifiers, credentials or internal addresses. This display does not grant redistribution rights.
+New screenshots were supplied directly by the maintainer on October 20, 2026 for official product presentation. Images are copied unchanged, not generated or retouched. Filename dates identify asset batches rather than feature releases. Existing review.png and feynman.png remain historical assets. Screenshots and on-screen indicators do not establish production availability, educational outcomes or autonomous execution. Public display does not grant redistribution rights.
