@@ -4,7 +4,9 @@
 
 Reviewed: 2026-10-20. Implemented means found in reviewed code, not verified production availability. Planning and some adaptive features require configuration. Present orchestration is user-controlled and rule-based with model assistance. Autonomous model-directed multi-tool execution and background reminders are Planned.
 
-- [Company website: 初界计划](http://114.215.206.70/)
+- [Company website: 初界计划](https://yikaoou.cn/)
+- [Official ExamO product page](https://yikaoou.cn/examo/)
+- [Business inquiries](mailto:chenbo@chujiejihua.cn)
 - [Product overview](https://chenb5408-bit.github.io/ExamO/)
 - [English overview](https://chenb5408-bit.github.io/ExamO/english.html)
 - [Implemented features and conditions](https://chenb5408-bit.github.io/ExamO/features.html)

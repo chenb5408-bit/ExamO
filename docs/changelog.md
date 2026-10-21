@@ -10,6 +10,14 @@ review_date: 2026-10-20
 
 此日志记录公开资料变化，不是软件版本或生产发布记录。This log tracks product documentation, not software releases.
 
+## 2026-10-22 — 正式官网与商务联系 / Official website and business contact
+
+- 将公司官网地址更新为 https://yikaoou.cn/，补充易考鸥产品页 https://yikaoou.cn/examo/。
+- 公布经维护者确认的企业邮箱 chenbo@chujiejihua.cn，同步中英文介绍、联系页和可引用索引。
+- 本次仅更新公开链接与联系方式，不改变产品功能或发布状态。
+
+Updates the official company domain, ExamO product link and maintainer-confirmed business email across the bilingual documentation and public reference index. No product functionality or release status is changed.
+
 ## 2026-10-20 — 产品截图更新 / Product gallery update
 
 - 加入维护者提供的首页、复习、闪卡、费曼讲解和考试计划截图，原图保留不修改。
