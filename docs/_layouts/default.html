@@ -24,7 +24,7 @@
   <meta name="twitter:card" content="summary">
   <link rel="stylesheet" href="{{ '/assets/css/site.css' | relative_url }}">
   <script type="application/ld+json">
-  {"@context":"https://schema.org","@type":"WebPage","@id":{{ page.url | absolute_url | jsonify }},"name":{{ page.title | default: site.title | jsonify }},"description":{{ page.description | default: site.description | jsonify }},"url":{{ page.url | absolute_url | jsonify }},"inLanguage":{{ page.lang | default: site.lang | jsonify }},"isPartOf":{"@type":"WebSite","@id":"https://chenb5408-bit.github.io/ExamO/#website","name":"ExamO 易考鸥","url":"https://chenb5408-bit.github.io/ExamO/"},"about":{"@type":"SoftwareApplication","@id":"https://chenb5408-bit.github.io/ExamO/#product","name":"ExamO","alternateName":"易考鸥","applicationCategory":"EducationalApplication","operatingSystem":"WeChat Mini Program","description":"AI-assisted learning and exam preparation for university students. Implemented user-controlled workflows; production availability unverified; autonomous model-directed orchestration and background reminders planned.","sameAs":"https://github.com/chenb5408-bit/ExamO"}}
+  {"@context":"https://schema.org","@type":"WebPage","@id":{{ page.url | absolute_url | jsonify }},"name":{{ page.title | default: site.title | jsonify }},"description":{{ page.description | default: site.description | jsonify }},"url":{{ page.url | absolute_url | jsonify }},"inLanguage":{{ page.lang | default: site.lang | jsonify }},"isPartOf":{"@type":"WebSite","@id":"https://chenb5408-bit.github.io/ExamO/#website","name":"ExamO 易考鸥","url":"https://chenb5408-bit.github.io/ExamO/","publisher":{"@type":"Organization","@id":"https://yikaoou.cn/#organization","name":"贵州初界计划科技有限公司","alternateName":"初界计划","url":"https://yikaoou.cn/","email":"chenbo@chujiejihua.cn"}},"about":{"@type":"SoftwareApplication","@id":"https://yikaoou.cn/examo/#application","url":"https://yikaoou.cn/examo/","publisher":{"@type":"Organization","@id":"https://yikaoou.cn/#organization","name":"贵州初界计划科技有限公司","alternateName":"初界计划","url":"https://yikaoou.cn/","email":"chenbo@chujiejihua.cn"},"name":"ExamO","alternateName":"易考鸥","applicationCategory":"EducationalApplication","operatingSystem":"WeChat Mini Program","description":"AI-assisted learning and exam preparation for university students. Implemented user-controlled workflows; production availability unverified; autonomous model-directed orchestration and background reminders planned.","sameAs":"https://github.com/chenb5408-bit/ExamO"}}
   </script>
 </head>
 <body>
@@ -52,6 +52,7 @@
   <main id="main">{{ content }}</main>
   <footer>
     <p>ExamO 易考鸥 · Product information · Reviewed 2026-10-20</p>
+    <p>旗下产品 / Provided by <a href="https://yikaoou.cn/">贵州初界计划科技有限公司（初界计划）</a> · <a href="https://yikaoou.cn/examo/">易考鸥官方产品页 / Official product page</a></p>
     <p><a href="{{ '/roadmap.html' | relative_url }}">Roadmap</a> · <a href="{{ '/changelog.html' | relative_url }}">Updates</a> · <a href="{{ '/security.html' | relative_url }}">Security</a> · <a href="{{ '/contact.html' | relative_url }}">Contact</a></p>
     <p>AI output needs review. Feature descriptions do not imply a verified public release.</p>
   </footer>

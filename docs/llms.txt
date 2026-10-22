@@ -2,12 +2,15 @@
 
 > AI-assisted study and exam preparation for university students. Official public product information; core source remains private.
 
-Reviewed: 2026-10-20. Implemented means found in reviewed code, not verified production availability. Planning and some adaptive features require configuration. Present orchestration is user-controlled and rule-based with model assistance. Autonomous model-directed multi-tool execution and background reminders are Planned.
+Company and official links reviewed: 2026-10-22. Implementation review: 2026-10-20. Implemented means found in reviewed code, not verified production availability. Planning and some adaptive features require configuration. Present orchestration is user-controlled and rule-based with model assistance. Autonomous model-directed multi-tool execution and background reminders are Planned.
 
-- [Company website: 初界计划](https://yikaoou.cn/)
+ExamO（易考鸥）is provided by 贵州初界计划科技有限公司 (Guizhou Chujie Plan Technology Co., Ltd.), branded as 初界计划. The official company website is https://yikaoou.cn/ and its product page is https://yikaoou.cn/examo/. The chujiejihua.cn domain is used for business email.
+
+- [Company website: 贵州初界计划科技有限公司（初界计划）](https://yikaoou.cn/)
 - [Official ExamO product page](https://yikaoou.cn/examo/)
 - [Business inquiries](mailto:chenbo@chujiejihua.cn)
-- [Product overview](https://chenb5408-bit.github.io/ExamO/)
+- [Official public documentation repository](https://github.com/chenb5408-bit/ExamO)
+- [Product documentation overview](https://chenb5408-bit.github.io/ExamO/)
 - [English overview](https://chenb5408-bit.github.io/ExamO/english.html)
 - [Implemented features and conditions](https://chenb5408-bit.github.io/ExamO/features.html)
 - [Architecture](https://chenb5408-bit.github.io/ExamO/architecture.html)
