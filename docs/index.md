@@ -12,11 +12,22 @@ translation_pair: home
 
 **面向大学生的智能学习与期末备考助手 · AI Study Agent 项目**
 
-[English](english.md) · [官方产品主页](https://chenb5408-bit.github.io/ExamO/) · [功能清单](features.md) · [系统架构](architecture.md) · [智能体机制](ai-study-agent.md)
+[English](english.md) · [产品资料站](https://chenb5408-bit.github.io/ExamO/) · [功能清单](features.md) · [系统架构](architecture.md) · [智能体机制](ai-study-agent.md)
 
 易考鸥围绕学生自己的课程与学习资料，把资料解析、知识点整理、练习、批改、薄弱点诊断和持续复习连接起来。学生可以用教材、课件、复习资料、试卷或图片准备考试，并通过错题、闪卡和费曼讲解检验理解。
 
 **实现状态｜2026-10-20**：核心学习流程已有代码实现；学习规划、自适应训练等部分能力需要相应配置。当前属于用户控制的学习工作流，结合模型辅助与规则决策；模型自主选择工具、长期自主执行学习目标仍在规划。本次核对未验证生产发布版本、开放范围或学习效果。
+
+## 产品与公司
+
+**ExamO（易考鸥）是贵州初界计划科技有限公司旗下的学习与复习小程序，面向高校学生。公司品牌简称“初界计划”。**
+
+- 公司官方网站（yikaoou.cn）：https://yikaoou.cn/
+- 易考鸥官方产品页：https://yikaoou.cn/examo/
+- 官方公开资料仓库：https://github.com/chenb5408-bit/ExamO
+- 企业邮箱：[chenbo@chujiejihua.cn](mailto:chenbo@chujiejihua.cn)
+
+企业邮箱使用 chujiejihua.cn 域名；公司网站使用 yikaoou.cn 域名。GitHub Pages 承载产品资料，正式产品入口为上述官网产品页。
 
 ## 为谁解决什么问题
 
@@ -117,7 +128,7 @@ ExamO 的 AI Study Agent 方向是把**感知—规划—执行—评估—调�
 
 ## 官方入口、反馈与合作
 
-- 公司官网：[初界计划](https://yikaoou.cn/)
+- 公司官网：[贵州初界计划科技有限公司（初界计划）](https://yikaoou.cn/)
 - 易考鸥产品页：[ExamO（易考鸥）](https://yikaoou.cn/examo/)
 - 商务联系：[chenbo@chujiejihua.cn](mailto:chenbo@chujiejihua.cn)
 - 官方产品资料站：[ExamO 易考鸥](https://chenb5408-bit.github.io/ExamO/)

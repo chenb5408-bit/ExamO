@@ -2,6 +2,14 @@
 
 此日志记录公开资料变化，不是软件版本或生产发布记录。This log tracks product documentation, not software releases.
 
+## 2026-10-22 — 产品与公司归属 / Product and company identity
+
+- 在中英文介绍、联系页及资料索引明确 ExamO（易考鸥）与贵州初界计划科技有限公司的关系。
+- 在页面开头列出正式官网 yikaoou.cn、产品页和公开资料仓库，说明企业邮箱域名。
+- 为资料站页脚和结构化数据补充公司全称、正式官网及产品归属，保留已有实现边界。
+
+Clarifies the company identity, official website and email-domain roles in public documentation. This documentation update does not change software capabilities or release status.
+
 ## 2026-10-22 — 正式官网与商务联系 / Official website and business contact
 
 - 将公司官网地址更新为 https://yikaoou.cn/，补充易考鸥产品页 https://yikaoou.cn/examo/。

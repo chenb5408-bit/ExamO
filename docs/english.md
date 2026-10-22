@@ -11,11 +11,22 @@ translation_pair: home
 
 **AI-assisted learning and exam preparation for university students · AI Study Agent project**
 
-[中文](index.md) · [Product website](https://chenb5408-bit.github.io/ExamO/english.html) · [Features](features.md) · [Architecture](architecture.md) · [Agent design](ai-study-agent.md)
+[中文](index.md) · [Product documentation](https://chenb5408-bit.github.io/ExamO/english.html) · [Features](features.md) · [Architecture](architecture.md) · [Agent design](ai-study-agent.md)
 
 ExamO connects a student's courses and learning materials with practice, feedback and continued revision. Students can work with textbooks, lecture materials, revision notes, papers and images, then use practice questions, mistakes, flashcards and Feynman-style explanations to check their understanding.
 
 **Implementation review: October 20, 2026.** Core study workflows have code implementations. Planning and some adaptive capabilities require configuration. The current system combines user-controlled workflows, model assistance and rule-based decisions. Autonomous model-led tool selection and sustained execution remain planned. This review does not verify production release availability or educational outcomes.
+
+## Product and company
+
+**ExamO（易考鸥）is a study and revision WeChat Mini Program for university students, provided by 贵州初界计划科技有限公司 (Guizhou Chujie Plan Technology Co., Ltd.). The company brand is 初界计划 (Chujie Plan).**
+
+- Official company website (yikaoou.cn): https://yikaoou.cn/
+- Official ExamO product page: https://yikaoou.cn/examo/
+- Official public documentation repository: https://github.com/chenb5408-bit/ExamO
+- Business email: [chenbo@chujiejihua.cn](mailto:chenbo@chujiejihua.cn)
+
+Business email uses the chujiejihua.cn domain; the company website uses yikaoou.cn. GitHub Pages hosts product documentation, with the official product entry on the company website above.
 
 ## Who it serves
 
